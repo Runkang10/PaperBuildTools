@@ -84,7 +84,7 @@ abstract class PluginConfig : DefaultTask() {
             )
         )
         saveConfig(config)
-        println("✅ Successfully generated 'paper-plugin.yml' for ${project.name}!")
+        println(" ✅ Successfully generated 'paper-plugin.yml' for ${project.name}!")
     }
 
     private fun generate(baseConfig: BaseConfig) =
