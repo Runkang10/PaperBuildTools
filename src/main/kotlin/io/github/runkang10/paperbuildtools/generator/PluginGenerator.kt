@@ -10,7 +10,7 @@ import org.gradle.kotlin.dsl.the
 class PluginGenerator(project: Project) {
     init {
         val extension = project.extensions.create("paperConfig", PluginExtension::class.java)
-        val task = project.tasks.register("generatePaperConfig", PluginConfig::class.java) {
+        val task = project.tasks.register("paperConfig", PluginConfig::class.java) {
             pluginName.set(extension.pluginName)
             pluginVersion.set(extension.pluginVersion)
             main.set(extension.main)
